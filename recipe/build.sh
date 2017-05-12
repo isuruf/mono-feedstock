@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export CPPFLAGS="-DPATH_MAX=4096"
 ./configure --prefix=$PREFIX --with-glib=embedded --enable-nls=no --disable-dependency-tracking --disable-silent-rules
 
 make
