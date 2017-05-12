@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+export CPPFLAGS="-DNAME_MAX=250"
 ./configure --prefix=$PREFIX --with-glib=embedded --enable-nls=no
 
 make
